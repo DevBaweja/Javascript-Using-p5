@@ -1,0 +1,64 @@
+:root{
+    --color-text-dark : #777;
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html,body{
+    font-size : 62.5%;
+    /* 1rem  =10px */
+    padding: 4rem;
+    color: var(--color-text-dark);
+}
+
+.title{
+    text-align: center;
+}
+
+/* Mew form */
+.mew-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.mew-form__label{
+    font-size: 2rem;
+}
+.mew-form__name{
+
+}
+.mew-form__content{
+
+}
+
+.loading{
+    width: 50%;
+    margin: 7.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    height: 7.5rem;
+    width: 7.5rem;
+    animation: load 1s infinite linear;
+    transform-origin: 45% 50%;
+}
+
+.not-visible{
+    display: none;
+}
+
+@keyframes load {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }   
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meower - Twitter for Cats 🐱</title>
+    <!-- Basic Skeleton -->
+    <link rel="stylesheet" type="text/css" href="./client/vendor/skeleton.css">
+    <!-- Grid -->
+    <link rel="stylesheet" type="text/css" href="./client/vendor/grid.css">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./client/resource/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <h1 class="title">
+                Meower - Twitter for Cats 🐱🐈
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <form action="" class="mew-form">
+
+            <div class="row">
+
+                <label class="mew-form__label" for="mew-form__name">
+                    Name
+                </label>
+                <input class="u-full-width" type="text" id="mew-form__name" name="mew-form__name" />
+            </div>
+
+            <div class="row">
+                <label class="mew-form__label" for="mew-form__content">
+                    Mew
+                </label>
+                <textarea class="u-full-width" id="mew-form__content" name="mew-form__content" cols="30"
+                    rows="10"></textarea>
+            </div>
+
+            <div class="row">
+                <!-- <input class="button-primary" type="submit" value="Send Your Mew 🐱"/> -->
+                <button class="button-primary"> Send Your Mew 🐱</button>
+            </div>
+        </form>
+
+        <div class="loading not-visible">
+            <ion-icon name="reload-outline" class="loader"></ion-icon>
+        </div>
+    </main>
+
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+    <!-- Client Script -->
+    <script src="./client/resource/client.js"></script>
+    <!-- Server Script -->
+    <!-- <script src="./server/index.js"></script> -->
+</body>
+
+</html>
