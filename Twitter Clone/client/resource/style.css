@@ -15,7 +15,6 @@ html,body{
     padding: 4rem;
     color: var(--color-text-dark);
 }
-
 .title{
     text-align: center;
 }
@@ -36,29 +35,75 @@ html,body{
 
 }
 
+/* Mews */
+.mews{
+    width: 75%;
+    margin: 7.5rem auto;
+}
+
+.mews div{
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+.mews h3{
+    font-size: 2.5rem;
+    color : #33C3F0;
+    text-transform: uppercase;
+    margin: 0;
+}
+.mews p{
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    margin: 0;
+}
+.mews small{
+    font-size: 1rem;
+}
+
+/* Loader */
 .loading{
     width: 50%;
     margin: 7.5rem auto;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 .loader{
     height: 7.5rem;
     width: 7.5rem;
-    animation: load 1s infinite linear;
-    transform-origin: 45% 50%;
+    -webkit-animation: load 1s infinite linear;
+            animation: load 1s infinite linear;
+    -webkit-transform-origin: 45% 50%;
+            transform-origin: 45% 50%;
 }
 
 .not-visible{
     display: none;
 }
 
-@keyframes load {
+/* Animation */
+@-webkit-keyframes load {
     0%{
-        transform: rotate(0);
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
     }
     100%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }   
 }
+
+@keyframes load {
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }   
+}
+
