@@ -16,7 +16,7 @@ class Chromosome {
         this.numberOfNodes = numberOfNodes;
     }
 
-    getBinary = (probability = 0.75) => {
+    getBinary = (probability = 0.95) => {
         const p = Math.random();
         if (p > probability) return 1;
         else return 0;
