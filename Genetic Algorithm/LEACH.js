@@ -90,8 +90,8 @@ const generateNodes = () => {
     const nodes = {};
 
     for (let index = 0; index < numberOfNodes; index++) {
-        const energy = random(20, 300);
-        const toBase = random(5, 20);
+        const energy = random(2000, 3000);
+        const toBase = random(800, 1000);
         const toNode = {};
         for (let j = 0; j < numberOfNodes; j++) {
             if (index !== j) toNode[j] = random(1, 10);
@@ -152,7 +152,7 @@ const avg = fitnessChromosome => {
     return average;
 };
 
-const numberOfNodes = 15;
+const numberOfNodes = 100;
 const populations = 21;
 const parents = 7;
 let generations = 5;
